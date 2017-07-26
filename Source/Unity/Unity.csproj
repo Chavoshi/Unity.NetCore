@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Microsoft.Practices.Unity</AssemblyName>
+    <RootNamespace>Microsoft.Practices.Unity</RootNamespace>
+
+    <PackageId>Unity.NetCore</PackageId>
+    <Title>Unity .Net Core</Title>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Mohammad Chavoshi</Authors>
+    <Description>The Unity Application Block (Unity) is a lightweight extensible dependency injection container with support for constructor, property, and method call injection. It facilitates loosely-coupled design. Declarative configuration and registration by convention are supported on selected platforms. This library contains a class library that targets .Net Core 2.0.</Description>
+    <PackageTags>Unity Container UnityContainer NetCore dependency injection inversion control</PackageTags>
+    <PackageIconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/Chavoshi/Unity.NetCore</PackageProjectUrl>
+    <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\Build\Release\Microsoft.Practices.Unity.Configuration.dll">
+      <Pack>true</Pack>
+      <Visible>False</Visible>
+      <PackagePath>lib\netcoreapp2.0\</PackagePath>
+    </Content>
+    <Content Include="..\..\Build\Release\Microsoft.Practices.Unity.Configuration.xml">
+      <Pack>true</Pack>
+      <Visible>False</Visible>
+      <PackagePath>lib\netcoreapp2.0\</PackagePath>
+    </Content>
+
+    <Content Include="..\..\Build\Release\Microsoft.Practices.Unity.RegistrationByConvention.dll">
+      <Pack>true</Pack>
+      <Visible>False</Visible>
+      <PackagePath>lib\netcoreapp2.0\</PackagePath>
+    </Content>
+    <Content Include="..\..\Build\Release\Microsoft.Practices.Unity.RegistrationByConvention.xml">
+      <Pack>true</Pack>
+      <Visible>False</Visible>
+      <PackagePath>lib\netcoreapp2.0\</PackagePath>
+    </Content>
+  </ItemGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.0\Microsoft.Practices.Unity.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.0\Microsoft.Practices.Unity.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommonServiceLocator.NetCore" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy &quot;$(OutDir)*.*&quot; &quot;$(SolutionDir)..\Build\$(ConfigurationName)\&quot; /s /i /y /d" />
+  </Target>
+
+</Project>

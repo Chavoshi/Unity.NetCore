@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Build
+/Source/.vs/Unity/v15
+/Source/Unity/obj
+/Source/Unity/bin
+/Source/Unity/.vs/Unity/v15
+/Source/Unity.Configuration/obj
+/Source/Unity.Configuration/bin
+/Source/Unity.Interception/obj
+/Source/Unity.Interception/bin
+/Source/Unity.Interception.Configuration/obj
+/Source/Unity.Interception.Configuration/bin
+/Source/Unity.RegistrationByConvention/obj
+/Source/Unity.RegistrationByConvention/bin
