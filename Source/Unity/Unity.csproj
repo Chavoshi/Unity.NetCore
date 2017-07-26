@@ -6,7 +6,7 @@
     <RootNamespace>Microsoft.Practices.Unity</RootNamespace>
 
     <PackageId>Unity.NetCore</PackageId>
-    <Title>Unity .Net Core</Title>
+    <Title>Unity for .Net Core</Title>
     <PackageVersion>4.0.1</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>The Unity Application Block (Unity) is a lightweight extensible dependency injection container with support for constructor, property, and method call injection. It facilitates loosely-coupled design. Declarative configuration and registration by convention are supported on selected platforms. This library contains a class library that targets .Net Core 2.0.</Description>
