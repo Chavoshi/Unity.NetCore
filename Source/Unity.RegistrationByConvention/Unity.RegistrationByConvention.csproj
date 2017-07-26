@@ -4,6 +4,12 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <RootNamespace>Microsoft.Practices.Unity</RootNamespace>
     <AssemblyName>Microsoft.Practices.Unity.RegistrationByConvention</AssemblyName>
+    <Version>4.0.1</Version>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <FileVersion>4.0.0.0</FileVersion>
+    <Authors>Mohammad Chavoshi</Authors>
+    <Company>Mohammad Chavoshi</Company>
+    <Description />
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

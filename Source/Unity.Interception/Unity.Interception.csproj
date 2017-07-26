@@ -7,7 +7,7 @@
 
     <PackageId>Unity.Interception.NetCore</PackageId>
     <Title>Unity.Interception .Net Core</Title>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>4.0.1</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>Unity interception enables you to effectively capture calls to objects and add additional functionality to the target object. Interception is useful when you want to modify the behavior for individual objects but not the entire class, very much as you would do when using the Decorator pattern. It provides a flexible approach for adding new behaviors to an object at run time. This library contains a class library that targets .Net Core 2.0.</Description>
     <PackageTags>Unity EntLib entlib6 IoC DI container interception AOP aspect LOB Net Core</PackageTags>
@@ -15,6 +15,9 @@
     <PackageProjectUrl>https://github.com/Chavoshi/Unity.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>4.0.1</Version>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <FileVersion>4.0.0.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
