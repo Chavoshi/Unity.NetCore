@@ -7,7 +7,7 @@
 
     <PackageId>Unity.NetCore</PackageId>
     <Title>Unity for .Net Core</Title>
-    <PackageVersion>4.0.1</PackageVersion>
+    <PackageVersion>4.0.2</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
     <Description>The Unity Application Block (Unity) is a lightweight extensible dependency injection container with support for constructor, property, and method call injection. It facilitates loosely-coupled design. Declarative configuration and registration by convention are supported on selected platforms. This library contains a class library that targets .Net Core 2.0.</Description>
     <PackageTags>Unity Container UnityContainer NetCore dependency injection inversion control</PackageTags>
@@ -15,7 +15,7 @@
     <PackageProjectUrl>https://github.com/Chavoshi/Unity.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>4.0.1</Version>
+    <Version>4.0.2</Version>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <FileVersion>4.0.0.0</FileVersion>
     <Product>Microsoft.Practices.Unity</Product>
