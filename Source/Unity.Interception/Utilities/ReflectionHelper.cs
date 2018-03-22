@@ -113,11 +113,15 @@ namespace Microsoft.Practices.Unity.InterceptionExtension
         {
             Microsoft.Practices.Unity.Utility.Guard.ArgumentNotNull(member, "member");
 
-            IEnumerable<Object> attributesAsObjects = member.GetCustomAttributes(typeof(TAttribute), inherits);
-            TAttribute[] attributes = new TAttribute[attributesAsObjects.Count()];
-
+            object[] attributesAsObjects = member.GetCustomAttributes(typeof(TAttribute), inherits);
+            TAttribute[] attributes = new TAttribute[attributesAsObjects.Length];
             int index = 0;
-            attributesAsObjects.ForEach(attr => attributes[index++] = (TAttribute)attr);
+
+            Array.ForEach(attributesAsObjects,
+                delegate (object o)
+                {
+                    attributes[index++] = (TAttribute)o;
+                });
 
             return attributes;
         }
