@@ -1,21 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Microsoft.Practices.Unity.InterceptionExtension</RootNamespace>
     <AssemblyName>Microsoft.Practices.Unity.Interception</AssemblyName>
 
     <PackageId>Unity.Interception.NetCore</PackageId>
-    <Title>Unity Interception Extension for .Net Core</Title>
-    <PackageVersion>4.0.1</PackageVersion>
+    <Title>Unity Interception Extension for .Net Core &amp; .Net Standard</Title>
+    <PackageVersion>4.0.3</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
-    <Description>Unity interception enables you to effectively capture calls to objects and add additional functionality to the target object. Interception is useful when you want to modify the behavior for individual objects but not the entire class, very much as you would do when using the Decorator pattern. It provides a flexible approach for adding new behaviors to an object at run time. This library contains a class library that targets .Net Core 2.0.</Description>
+    <Description>Unity interception enables you to effectively capture calls to objects and add additional functionality to the target object. Interception is useful when you want to modify the behavior for individual objects but not the entire class, very much as you would do when using the Decorator pattern. It provides a flexible approach for adding new behaviors to an object at run time. This library contains a class library that targets .Net Core 2.0 &amp; .Net Standard 2.0.</Description>
     <PackageTags>Unity EntLib entlib6 IoC DI container interception AOP aspect LOB Net Core</PackageTags>
-    <PackageIconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
+    <PackageIconUrl>https://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/Chavoshi/Unity.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>4.0.1</Version>
+    <Version>4.0.3</Version>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <FileVersion>4.0.0.0</FileVersion>
   </PropertyGroup>
@@ -34,13 +34,17 @@
   </ItemGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>TRACE;DEBUG;NETCOREAPP2_0</DefineConstants>
-    <DocumentationFile>bin\Debug\netcoreapp2.0\Microsoft.Practices.Unity.Interception.xml</DocumentationFile>
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD2_0</DefineConstants>
+    <DocumentationFile>bin\Debug\netstandard2.0\Microsoft.Practices.Unity.Interception.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netcoreapp2.0\Microsoft.Practices.Unity.Interception.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netstandard2.0\Microsoft.Practices.Unity.Interception.xml</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Unity\Unity.csproj" />

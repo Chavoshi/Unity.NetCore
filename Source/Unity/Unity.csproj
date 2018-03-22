@@ -1,21 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Microsoft.Practices.Unity</AssemblyName>
     <RootNamespace>Microsoft.Practices.Unity</RootNamespace>
 
     <PackageId>Unity.NetCore</PackageId>
-    <Title>Unity for .Net Core</Title>
-    <PackageVersion>4.0.1</PackageVersion>
+    <Title>Unity for .Net Core &amp; .Net Standard</Title>
+    <PackageVersion>4.0.3</PackageVersion>
     <Authors>Mohammad Chavoshi</Authors>
-    <Description>The Unity Application Block (Unity) is a lightweight extensible dependency injection container with support for constructor, property, and method call injection. It facilitates loosely-coupled design. Declarative configuration and registration by convention are supported on selected platforms. This library contains a class library that targets .Net Core 2.0.</Description>
+    <Description>The Unity Application Block (Unity) is a lightweight extensible dependency injection container with support for constructor, property, and method call injection. It facilitates loosely-coupled design. Declarative configuration and registration by convention are supported on selected platforms. This library contains a class library that targets .Net Core 2.0 &amp; .Net Standard 2.0.</Description>
     <PackageTags>Unity Container UnityContainer NetCore dependency injection inversion control</PackageTags>
-    <PackageIconUrl>http://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
+    <PackageIconUrl>https://nuget.org/Media/Default/Packages/Unity/2.0/entlib_new_icon_100x100.png</PackageIconUrl>
     <PackageProjectUrl>https://github.com/Chavoshi/Unity.NetCore</PackageProjectUrl>
     <PackageLicenseUrl>http://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Version>4.0.1</Version>
+    <Version>4.0.3</Version>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <FileVersion>4.0.0.0</FileVersion>
     <Product>Microsoft.Practices.Unity</Product>
@@ -25,36 +25,36 @@
     <Content Include="..\..\Build\Release\Microsoft.Practices.Unity.Configuration.dll">
       <Pack>true</Pack>
       <Visible>False</Visible>
-      <PackagePath>lib\netcoreapp2.0\</PackagePath>
+      <PackagePath>lib\netstandard2.0\</PackagePath>
     </Content>
     <Content Include="..\..\Build\Release\Microsoft.Practices.Unity.Configuration.xml">
       <Pack>true</Pack>
       <Visible>False</Visible>
-      <PackagePath>lib\netcoreapp2.0\</PackagePath>
+      <PackagePath>lib\netstandard2.0\</PackagePath>
     </Content>
 
     <Content Include="..\..\Build\Release\Microsoft.Practices.Unity.RegistrationByConvention.dll">
       <Pack>true</Pack>
       <Visible>False</Visible>
-      <PackagePath>lib\netcoreapp2.0\</PackagePath>
+      <PackagePath>lib\netstandard2.0\</PackagePath>
     </Content>
     <Content Include="..\..\Build\Release\Microsoft.Practices.Unity.RegistrationByConvention.xml">
       <Pack>true</Pack>
       <Visible>False</Visible>
-      <PackagePath>lib\netcoreapp2.0\</PackagePath>
+      <PackagePath>lib\netstandard2.0\</PackagePath>
     </Content>
   </ItemGroup>
   
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\netcoreapp2.0\Microsoft.Practices.Unity.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netstandard2.0\Microsoft.Practices.Unity.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp2.0\Microsoft.Practices.Unity.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard2.0\Microsoft.Practices.Unity.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommonServiceLocator.NetCore" Version="1.3.0" />
+    <PackageReference Include="CommonServiceLocator.NetCore" Version="1.3.1" />
   </ItemGroup>
 
   <ItemGroup>

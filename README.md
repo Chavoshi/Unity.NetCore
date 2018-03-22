@@ -1,4 +1,4 @@
-# Unity for .Net Core 2.0
+# Unity for .Net Core 2.0 & .Net Standard 2.0
 
 The Unity Container (Unity) is a lightweight, extensible dependency injection container. It facilitates building loosely coupled applications and provides developers with the following advantages:
 
@@ -11,7 +11,7 @@ The Unity Container (Unity) is a lightweight, extensible dependency injection co
 
 ## How To Install The Package
 
-To install Unity for .Net Core 2.0, run the following command in the Package Manager Console:
+To install Unity for .Net Core 2.0 & .Net Standard 2.0, run the following command in the Package Manager Console:
 
     PM> Install-Package Unity.NetCore
 
@@ -20,13 +20,13 @@ To install Unity for .Net Core 2.0, run the following command in the Package Man
 https://www.nuget.org/packages/Unity.NetCore/
 
 
-# Unity Interception for .Net Core 2.0
+# Unity Interception for .Net Core 2.0 & .Net Standard 2.0
 
 Unity interception enables you to effectively capture calls to objects and add additional functionality to the target object. Interception is useful when you want to modify the behavior for individual objects but not the entire class, very much as you would do when using the Decorator pattern. It provides a flexible approach for adding new behaviors to an object at run time.
 
 ## How To Install The Package
 
-To install Unity.Interception for .Net Core 2.0, run the following command in the Package Manager Console:
+To install Unity.Interception for .Net Core 2.0 & .Net Standard 2.0, run the following command in the Package Manager Console:
 
     PM> Install-Package Unity.Interception.NetCore
 
